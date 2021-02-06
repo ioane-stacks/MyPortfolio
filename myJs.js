@@ -23,31 +23,31 @@ function showInfo(variant){
 
 function closeInfo(){
     extInfo.style.display = "none";
-    Home.style.backgroundImage = "url('Home.svg')";
-    Portfolio.style.backgroundImage = "url('Portfolio.svg')";
-    Contact.style.backgroundImage = "url('Contact.svg')";
+    Home.style.backgroundImage = "url('icons/Home.svg')";
+    Portfolio.style.backgroundImage = "url('icons/Portfolio.svg')";
+    Contact.style.backgroundImage = "url('icons/Contact.svg')";
 }
 
 function showHome() {
-    Home.style.backgroundImage = "url('Home2.svg')";
-    Portfolio.style.backgroundImage = "url('Portfolio.svg')";
-    Contact.style.backgroundImage = "url('Contact.svg')";
+    Home.style.backgroundImage = "url('icons/Home2.svg')";
+    Portfolio.style.backgroundImage = "url('icons/Portfolio.svg')";
+    Contact.style.backgroundImage = "url('icons/Contact.svg')";
     TriangleTop.style.top = 20;
     showContent.src = "general.html";
     myHeader.innerHTML = "მოგესალმებით";
     extInfo.style.overflowY = "scroll";
 }
 function showPortfolio() {
-    Home.style.backgroundImage = "url('Home.svg')";
-    Portfolio.style.backgroundImage = "url('Portfolio2.svg')";
-    Contact.style.backgroundImage = "url('Contact.svg')";
+    Home.style.backgroundImage = "url('icons/Home.svg')";
+    Portfolio.style.backgroundImage = "url('icons/Portfolio2.svg')";
+    Contact.style.backgroundImage = "url('icons/Contact.svg')";
     TriangleTop.style.top = 170;
     myHeader.innerHTML = "პორტფოლიო";
 }
 function showContact() {
-    Home.style.backgroundImage = "url('Home.svg')";
-    Portfolio.style.backgroundImage = "url('Portfolio.svg')";
-    Contact.style.backgroundImage = "url('Contact2.svg')";
+    Home.style.backgroundImage = "url('icons/Home.svg')";
+    Portfolio.style.backgroundImage = "url('icons/Portfolio.svg')";
+    Contact.style.backgroundImage = "url('icons/Contact2.svg')";
     TriangleTop.style.top = 320;
     myHeader.innerHTML = "კონტაქტი";
 }

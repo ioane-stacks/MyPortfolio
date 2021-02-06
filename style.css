@@ -1,11 +1,11 @@
 @font-face {
     font-family: navbrand;
-    src: url(OCRAEXT.TTF);
+    src: url(fonts/OCRAEXT.TTF);
 }
 
 @font-face {
     font-family: bpgnino;
-    src: url(bpgnino.ttf);
+    src: url(fonts/bpgnino.ttf);
 }
 
 * {
@@ -44,7 +44,7 @@ a {
 }
 
 #Home {
-    background-image: url(Home.svg);
+    background-image: url(icons/Home.svg);
     width: 70px;
     height: 70px;
     background-size: cover;
@@ -53,11 +53,11 @@ a {
 }
 
 #Home:hover {
-    background-image: url(Home2.svg) !important;
+    background-image: url(icons/Home2.svg) !important;
 }
 
 #Portfolio {
-    background-image: url(Portfolio.svg);
+    background-image: url(icons/Portfolio.svg);
     width: 70px;
     height: 70px;
     margin-top: 80px;
@@ -67,14 +67,14 @@ a {
 }
 
 #Portfolio:hover {
-    background-image: url(Portfolio2.svg) !important;
+    background-image: url(icons/Portfolio2.svg) !important;
     width: 70px;
     height: 70px;
     background-size: cover;
 }
 
 #Contact {
-    background-image: url(Contact.svg);
+    background-image: url(icons/Contact.svg);
     width: 70px;
     height: 70px;
     margin-top: 80px;
@@ -84,7 +84,7 @@ a {
 }
 
 #Contact:hover {
-    background-image: url(Contact2.svg) !important;
+    background-image: url(icons/Contact2.svg) !important;
     width: 70px;
     height: 70px;
     background-size: cover;
@@ -155,12 +155,12 @@ input[type=search] {
 }
 @media (min-width: 1367px){
     #extInfBox {
-        width: 60%;
+        width: 45%;
     }
 }
 
 #closeBtn {
-    background-image: url(CloseBtn.svg);
+    background-image: url(icons/CloseBtn.svg);
     background-size: cover;
     width: 20px;
     height: 20px;
