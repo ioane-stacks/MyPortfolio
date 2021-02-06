@@ -67,7 +67,7 @@ a {
 }
 
 #Portfolio:hover {
-    background-image: url(Portfolio2.svg) !important;
+    background-image: url(portfolio2.svg) !important;
     width: 70px;
     height: 70px;
     background-size: cover;
