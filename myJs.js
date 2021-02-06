@@ -33,7 +33,7 @@ function showHome() {
     Portfolio.style.backgroundImage = "url('Portfolio.svg')";
     Contact.style.backgroundImage = "url('Contact.svg')";
     TriangleTop.style.top = 20;
-    showContent.src = "general.html";
+    showContent.src = "https://google.com";
     myHeader.innerHTML = "მოგესალმებით";
     extInfo.style.overflowY = "scroll";
 }
