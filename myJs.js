@@ -1,3 +1,4 @@
+document.oncontextmenu = new Function("return false;");
 var extInfo = document.getElementById("extInfBox");
 var Home = document.getElementById("Home");
 var Portfolio = document.getElementById("Portfolio");
@@ -11,11 +12,13 @@ var widthPers;
 function Show() {
     extInfo.style.opacity = 1;
     extInfo.style.marginLeft = '110px';
+    showContent.style.display = 'block';
 }
 
 function Hide() {
     extInfo.style.opacity = 0;
     extInfo.style.marginLeft = '90px';
+    showContent.style.display = 'none';
 }
 
 function showInfo(variant){ 
