@@ -1,0 +1,181 @@
+@font-face {
+    font-family: navbrand;
+    src: url(OCRAEXT.TTF);
+}
+
+@font-face {
+    font-family: bpgnino;
+    src: url(bpgnino.ttf);
+}
+
+* {
+    cursor: url(mCurs.png) 12 12, auto;
+    user-select: none;
+    font-family: bpgnino;
+    color: #189e94;
+}
+
+a {
+    cursor: url(mCursPoint.png) 12 12, auto;
+}
+
+.darkGreen {
+    background-image: url(background.svg);
+    width: 100%;
+    background-color: #021d1d;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.navbarBrand {
+    font-family: 'navbrand' !important;
+    color: #189e94 !important;
+    font-size: 3em !important;
+    transition: 0.3s;
+}
+
+.navbarBrand:hover {
+    text-shadow: -2px -2px 0 #05302f;
+}
+
+.leftSideBar {
+    margin-top: 60px;
+    margin-left: 60px;
+}
+
+#Home {
+    background-image: url(Home.svg);
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+    cursor: url(mCursPoint.png) 12 12, auto;
+    transition: 0.3s;
+}
+
+#Home:hover {
+    background-image: url(Home2.svg) !important;
+}
+
+#Portfolio {
+    background-image: url(Portfolio.svg);
+    width: 70px;
+    height: 70px;
+    margin-top: 80px;
+    background-size: cover;
+    cursor: url(mCursPoint.png) 12 12, auto;
+    transition: 0.3s;
+}
+
+#Portfolio:hover {
+    background-image: url(Portfolio2.svg) !important;
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+}
+
+#Contact {
+    background-image: url(Contact.svg);
+    width: 70px;
+    height: 70px;
+    margin-top: 80px;
+    background-size: cover;
+    cursor: url(mCursPoint.png) 12 12, auto;
+    transition: 0.3s;
+}
+
+#Contact:hover {
+    background-image: url(Contact2.svg) !important;
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+}
+
+input[type=search] {
+    cursor: url(mCursSearch.png) 12 12, auto;
+}
+
+.inputSearch {
+    outline: none;
+    border: 5px solid #053030;
+    padding-top: 4px;
+    padding-left: 10px;
+    font-family: bpgnino;
+    border-radius: 5px;
+    width: 100px;
+    float: right;
+    transition: 0.3s;
+    background-color: #053030;
+    color: #189e94;
+}
+
+.inputSearch:hover {
+    width: 115px;
+}
+
+.inputSearch:focus {
+    width: 250px;
+}
+
+#extInfBox {
+    width: 75%;
+    height: 500px;
+    margin-left: 110px;
+    position: absolute;
+    display: none;
+}
+
+#extInfshower {
+    top: 20;
+    left: -28;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 30px 15px 0;
+    border-color: transparent #021d1d transparent transparent;
+    position: absolute;
+}
+#myHeader {
+    width: 100%;
+    height: 60px;
+    padding: 20px 40px;
+    top: 0;
+    left: 0;
+    border-radius: 20px 20px 0 0;
+    position: absolute;
+    background: #021d1d;
+}
+#extInfo {
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    border-radius: 20px;
+    padding: 80px 50px 20px 50px;
+    background-color: #021d1d;
+    position: absolute;
+}
+@media (min-width: 1367px){
+    #extInfBox {
+        width: 60%;
+    }
+}
+
+#closeBtn {
+    background-image: url(CloseBtn.svg);
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    right: 20px;
+    top: 20px;
+    cursor: url(mCursPoint.png) 12 12, auto;
+    position: absolute;
+}
+
+#showContent {
+    width: 100%;
+    height: 150%;
+    border-radius: 2px;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
