@@ -9,14 +9,14 @@
 }
 
 * {
-    cursor: url(mCurs.png) 12 12, auto;
+    cursor: url(cursor/mCurs.png) 12 12, auto;
     user-select: none;
     font-family: bpgnino;
     color: #189e94;
 }
 
 a {
-    cursor: url(mCursPoint.png) 12 12, auto;
+    cursor: url(cursor/mCursPoint.png) 12 12, auto;
 }
 
 .darkGreen {
@@ -48,7 +48,7 @@ a {
     width: 70px;
     height: 70px;
     background-size: cover;
-    cursor: url(mCursPoint.png) 12 12, auto;
+    cursor: url(cursor/mCursPoint.png) 12 12, auto;
     transition: 0.3s;
 }
 
@@ -62,7 +62,7 @@ a {
     height: 70px;
     margin-top: 80px;
     background-size: cover;
-    cursor: url(mCursPoint.png) 12 12, auto;
+    cursor: url(cursor/mCursPoint.png) 12 12, auto;
     transition: 0.3s;
 }
 
@@ -79,7 +79,7 @@ a {
     height: 70px;
     margin-top: 80px;
     background-size: cover;
-    cursor: url(mCursPoint.png) 12 12, auto;
+    cursor: url(cursor/mCursPoint.png) 12 12, auto;
     transition: 0.3s;
 }
 
@@ -91,7 +91,7 @@ a {
 }
 
 input[type=search] {
-    cursor: url(mCursSearch.png) 12 12, auto;
+    cursor: url(cursor/mCursSearch.png) 12 12, auto;
 }
 
 .inputSearch {
@@ -166,7 +166,7 @@ input[type=search] {
     height: 20px;
     right: 20px;
     top: 20px;
-    cursor: url(mCursPoint.png) 12 12, auto;
+    cursor: url(cursor/mCursPoint.png) 12 12, auto;
     position: absolute;
 }
 
