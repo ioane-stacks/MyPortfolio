@@ -109,7 +109,7 @@ input[type=search] {
     cursor: url(cursor/mCursSearch.png) 12 12, auto;
 }
 
-.inputSearch {
+.inputControl {
     outline: none;
     border: 5px solid #053030;
     padding-top: 4px;
@@ -123,11 +123,11 @@ input[type=search] {
     color: #189e94;
 }
 
-.inputSearch:hover {
+.inputControl:hover {
     width: 115px;
 }
 
-.inputSearch:focus {
+.inputControl:focus {
     width: 250px;
 }
 
