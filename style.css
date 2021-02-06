@@ -119,9 +119,11 @@ input[type=search] {
 #extInfBox {
     width: 75%;
     height: 500px;
-    margin-left: 110px;
+    margin-left: 90px;
     position: absolute;
-    display: none;
+    transition: 0.3s;
+    display: block;
+    opacity: 0;
 }
 
 #extInfshower {

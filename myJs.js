@@ -6,9 +6,20 @@ var TriangleTop = document.getElementById("extInfshower");
 var showContent = document.getElementById("showContent");
 var myHeader = document.getElementById("myHeader");
 
+var widthPers;
 
-function showInfo(variant){
-    extInfo.style.display = "block";
+function Show() {
+    extInfo.style.opacity = 1;
+    extInfo.style.marginLeft = '110px';
+}
+
+function Hide() {
+    extInfo.style.opacity = 0;
+    extInfo.style.marginLeft = '90px';
+}
+
+function showInfo(variant){ 
+    Show();
     switch(variant) {
         case 1:
             showHome();
@@ -23,7 +34,7 @@ function showInfo(variant){
 }
 
 function closeInfo() {
-    extInfo.style.display = "none";
+    Hide();
     Home.style.backgroundImage = "url('icons/Home.svg')";
     Portfolio.style.backgroundImage = "url('icons/Portfolio.svg')";
     Contact.style.backgroundImage = "url('icons/Contact.svg')";
