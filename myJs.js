@@ -49,13 +49,14 @@ function showHome() {
     Contact.style.backgroundImage = "url('icons/Contact.svg')";
     showContent.src = "pages/general.html";
     myHeader.innerHTML = "მოგესალმებით";
-    TriangleTop.style.top = '20px';
+    TriangleTop.style.top = '50px';
 }
 function showPortfolio() {
     Home.style.backgroundImage = "url('icons/Home.svg')";
     Portfolio.style.backgroundImage = "url('icons/Portfolio2.svg')";
     Contact.style.backgroundImage = "url('icons/Contact.svg')";
-    TriangleTop.style.top = '170px';
+    showContent.src = "pages/portfolio.html"
+    TriangleTop.style.top = '200px';
     myHeader.innerHTML = "პორტფოლიო";
 }
 function showContact() {
@@ -63,7 +64,7 @@ function showContact() {
     Portfolio.style.backgroundImage = "url('icons/Portfolio.svg')";
     Contact.style.backgroundImage = "url('icons/Contact2.svg')";
     showContent.src = "pages/contact.html";
-    TriangleTop.style.top = '320px';
+    TriangleTop.style.top = '350px';
     myHeader.innerHTML = "კონტაქტი";
 }
 
