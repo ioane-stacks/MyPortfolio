@@ -62,6 +62,37 @@ function showContact() {
     Home.style.backgroundImage = "url('icons/Home.svg')";
     Portfolio.style.backgroundImage = "url('icons/Portfolio.svg')";
     Contact.style.backgroundImage = "url('icons/Contact2.svg')";
+    showContent.src = "pages/contact.html";
     TriangleTop.style.top = '320px';
     myHeader.innerHTML = "კონტაქტი";
+}
+
+function copyToClipboard(Id) {
+    var textOfli = document.getElementById(Id).innerText;
+    var newTextArea = document.createElement("textarea");
+    newTextArea.value = textOfli;
+    newTextArea.style.width = "0px";
+    newTextArea.style.height = "0px";
+    newTextArea.style.position = "absolute";
+    newTextArea.style.opacity = 0;
+    document.body.appendChild(newTextArea);
+    newTextArea.select();
+    newTextArea.setSelectionRange(6, 999);
+    document.execCommand('copy');
+    document.body.removeChild(newTextArea);
+}
+
+function textCopy(mLeft, Id){
+    copyToClipboard(Id);
+    var createSpan = document.createElement("span");
+    var node = document.createTextNode("დაკოპირებულია");
+    var tooltipAdd = document.getElementById("tooltip");
+    createSpan.style.left = mLeft + "px";
+    createSpan.classList.add("tooltiptext");
+    createSpan.appendChild(node);
+    tooltipAdd.appendChild(createSpan);
+    var removeSpan = setInterval(() => {
+        tooltipAdd.removeChild(createSpan);
+        clearInterval(removeSpan);
+    }, 1000);
 }

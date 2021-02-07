@@ -10,7 +10,7 @@
 
 * {
     cursor: url(cursor/mCurs.png) 12 12, auto;
-    user-select: none;
+    /* user-select: none; */
     font-family: bpgnino;
     color: #189e94;
 }
@@ -209,4 +209,37 @@ input[type=search] {
 
 ::-webkit-scrollbar {
     width: 0px;
+}
+
+.block-bordered {
+    background: #08312e;
+    padding-top: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    cursor: url(cursor/mCursPoint.png) 12 12, auto;
+    transition: 0.3s;
+}
+
+.block-bordered:hover {
+    color: #062523;
+    background: #16857d;
+}
+.block-bordered:active {
+    color: #031413;
+    background: #28ecdf;
+}
+
+.tooltiptext {
+    top: 35px;
+    padding-top: 7px;
+    padding-bottom: 3px;
+    padding-left: 7px;
+    padding-right: 7px;
+    border-radius: 10px;
+    visibility: visible;
+    font-size: 12px;
+    position: absolute;
+    color: white;
+    background: black;
 }
