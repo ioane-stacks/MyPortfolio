@@ -384,6 +384,7 @@ button {
     position: relative;
     cursor: url(cursor/mCursPoint.png) 12 12, auto !important;
     transition: 0.4s;
+    z-index: 2;
 }
 
 .examples img {
@@ -393,6 +394,8 @@ button {
     background-size: cover;
     position: absolute;
     cursor: url(cursor/mCursPoint.png) 12 12, auto !important;
+    filter: grayscale(100%);
+    transition: 0.5s;
 }
 .exampleTitle {
     top: 10px;
@@ -409,4 +412,28 @@ button {
 
 .examples:hover .exampleTitle {
  left: 15px;   
+}
+
+.detailed {
+    top: 58px;
+    left: 62px;
+    color: white;
+    font-size: 18px;
+    background: #05302f;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 4px;
+    border-radius: 12px;
+    opacity: 0;
+    position: absolute;
+    cursor: url(cursor/mCursPoint.png) 12 12, auto !important;
+    transition: 0.4s;
+}
+
+.examples:hover img {
+    filter: grayscale(0%)
+}
+
+.examples:hover .detailed {
+    opacity: 1;
 }
