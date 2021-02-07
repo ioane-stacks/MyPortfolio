@@ -200,11 +200,11 @@ button {
 }
 
 .w100 {
-    width: 100%;
+    width: 100% !important;
 }
 
 .he1 {
-    height: 150px;
+    height: 150px !important;
 }
 
 #extInfBox {
@@ -362,4 +362,9 @@ button {
     width: 250px;
     height: 120px;
     border-radius: 15px;
+    padding: 5px;
+    cursor: url(cursor/mCursPoint.png) 12 12, auto;
+}
+.examples img {
+    border-radius: 10px;
 }
