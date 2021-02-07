@@ -10,7 +10,7 @@
 
 * {
     cursor: url(cursor/mCurs.png) 12 12, auto;
-    /* user-select: none; */
+    user-select: none;
     font-family: bpgnino;
     color: #189e94;
 }
@@ -217,7 +217,7 @@ input[type=search] {
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 5px;
-    cursor: url(cursor/mCursPoint.png) 12 12, auto;
+    cursor: url(cursor/mCursCopy.png) 12 12, auto;
     transition: 0.3s;
 }
 
