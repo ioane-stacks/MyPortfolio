@@ -341,3 +341,25 @@ button {
     background-color: #021d1d;
     color: #189e94;
 }
+
+.showWeb {
+    top: 0;
+    left: 9%;
+    width: 82%;
+    height: 100%;
+    overflow-y: auto;
+    display: none;
+    background-color: #062523;
+    position: absolute;
+    margin-left: auto;
+}
+
+.categoryBox {
+    padding: 15px;
+}
+
+.examples {
+    width: 250px;
+    height: 120px;
+    border-radius: 15px;
+}
