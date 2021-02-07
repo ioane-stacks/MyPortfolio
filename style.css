@@ -191,6 +191,11 @@ button {
     margin-top: 15px !important;
 }
 
+.dispInline {
+    display: inline;
+    margin-right: 15px !important;
+}
+
 .w1 {
     width: 200px !important;
 }
@@ -342,16 +347,27 @@ button {
     color: #189e94;
 }
 
-.showWeb {
+#showWebBack {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+    background: rgba(3, 15, 14, 0.6);
+    position: absolute;
+}
+
+#showWeb {
     top: 0;
     left: 9%;
     width: 82%;
     height: 100%;
     overflow-y: auto;
-    display: none;
+    box-shadow: 0 0 6px black;
     background-color: #062523;
     position: absolute;
     margin-left: auto;
+    z-index: 1;
 }
 
 .categoryBox {
@@ -360,11 +376,37 @@ button {
 
 .examples {
     width: 250px;
-    height: 120px;
+    height: 140px;
     border-radius: 15px;
     padding: 5px;
-    cursor: url(cursor/mCursPoint.png) 12 12, auto;
+    display: inline-block;
+    margin-left: 25px;
+    position: relative;
+    cursor: url(cursor/mCursPoint.png) 12 12, auto !important;
+    transition: 0.4s;
 }
+
 .examples img {
+    width: 238px;
+    height: 128px;
     border-radius: 10px;
+    background-size: cover;
+    position: absolute;
+    cursor: url(cursor/mCursPoint.png) 12 12, auto !important;
+}
+.exampleTitle {
+    top: 10px;
+    left: 10px;
+    padding-left: 7px;
+    padding-right: 7px;
+    background: black;
+    border-radius: 5px;
+    color: white;
+    position: absolute;
+    cursor: url(cursor/mCursPoint.png) 12 12, auto !important;
+    transition: 0.4s;
+}
+
+.examples:hover .exampleTitle {
+ left: 15px;   
 }
