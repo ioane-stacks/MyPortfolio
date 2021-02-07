@@ -106,7 +106,20 @@ h5 {
 }
 
 input[type=search] {
-    cursor: url(cursor/mCursSearch.png) 12 12, auto;
+    cursor: url(cursor/mCursSearch.png) 0 12, auto;
+}
+
+input[type=search]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url(icons/searchClear.svg);
+    width: 15px;
+    height: 15px;
+    margin-bottom: 2px;
+    cursor: url(cursor/mCursPoint.png) 5 9, auto;
+}
+input[type=search]::selection {
+    color: orange;
 }
 
 .inputControl {
