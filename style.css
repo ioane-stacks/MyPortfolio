@@ -179,6 +179,11 @@ button {
     font-family: bpgnino;
     border-radius: 5px;
     background-color: #053030;
+    transition: 0.4s;
+}
+
+.neonButton:hover {
+    background-color: #063838;
 }
 
 .dispBlock {
@@ -191,7 +196,7 @@ button {
 }
 
 .w2 {
-    width: 410px !important;
+    width: 411px !important;
 }
 
 .w100 {
