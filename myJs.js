@@ -6,6 +6,7 @@ var Contact = document.getElementById("Contact");
 var TriangleTop = document.getElementById("extInfshower");
 var showContent = document.getElementById("showContent");
 var myHeader = document.getElementById("myHeader");
+var showWebBack = document.getElementById("showWebBack");
 
 var widthPers;
 
@@ -96,4 +97,30 @@ function textCopy(mLeft, Id){
         tooltipAdd.removeChild(createSpan);
         clearInterval(removeSpan);
     }, 1000);
+}
+
+function ShowDetailed(Name) {
+    switch(Name) {
+        case 'learncodding':
+            window.open("https://ioane-stacks.github.io/LearnCoding/", "_blank");
+            break;
+        case 'read':
+            window.open("https://ioane-stacks.github.io/Read/", "_blank");
+            break;
+        case 'registration':
+            window.open("https://ioane-stacks.github.io/Registration-Form/", "_blank");
+            break;
+        case 'starshipwars':
+            window.open("https://ioane-stacks.github.io/StarShipWars/", "_blank");
+            break;
+        case 'airship':
+            window.open("https://ioane-stacks.github.io/AirShip/", "_blank");
+            break;
+        case 'rollingball':
+            window.open("https://ioane-stacks.github.io/Rolling-Ball/", "_blank");
+            break;
+        case 'calculator':
+            window.open("https://ioane-stacks.github.io/Javascript-Calculator/", "_blank");
+            break;
+    }
 }
