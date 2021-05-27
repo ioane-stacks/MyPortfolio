@@ -99,6 +99,23 @@ function textCopy(mLeft, Id){
     }, 1000);
 }
 
+function disableInfo(){
+    var createSpan = document.createElement("span");
+    var node = document.createTextNode("დროებით მიუწვდომელია");
+    var tooltipAdd = document.getElementById("tooltip");
+    createSpan.style.display = "absolute";
+    createSpan.style.left = 30 + "px";
+    createSpan.style.top = 310 + "px";
+    createSpan.classList.add("tooltiptext");
+    createSpan.appendChild(node);
+    tooltipAdd.appendChild(createSpan);
+    //document.querySelectorAll(".tooltiptext")[0].style.top = "300px";
+    var removeSpan = setInterval(() => {
+        tooltipAdd.removeChild(createSpan);
+        clearInterval(removeSpan);
+    }, 1000);
+}
+
 function ShowDetailed(Name) {
     switch(Name) {
         case 'learncodding':

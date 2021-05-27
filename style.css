@@ -172,18 +172,22 @@ button {
 }
 
 .neonButton {
-    outline: none;
-    width: auto;
-    height: 40px;
-    padding-top: 5px;
-    font-family: bpgnino;
-    border-radius: 5px;
-    background-color: #053030;
+    outline: none !important;
+    width: auto !important;
+    height: 40px !important;
+    padding-top: 8px !important;
+    font-family: bpgnino !important;
+    border-radius: 5px !important;
+    background-color: #053030 !important;
     transition: 0.4s;
 }
 
+a {
+    color: #189e94 !important;
+}
+
 .neonButton:hover {
-    background-color: #063838;
+    background-color: #063838 !important;
 }
 
 .dispBlock {
@@ -265,9 +269,42 @@ button {
     box-shadow: 5px 5px 5px rgba(1, 10, 10, 0.3);
 }
 
-@media (min-width: 1367px) {
+@media (min-width: 780px) {
     #extInfBox {
-        width: 45%;
+        top: 120px;
+        width: 60%;
+        height: 375px;
+        margin-left: 90px;
+        position: absolute;
+        transition: 0.3s;
+        display: block;
+        opacity: 0;
+    }
+}
+
+@media (min-width: 1360px) {
+    #extInfBox {
+        bottom: 20px;
+        width: 75%;
+        height: 520px;
+        margin-left: 90px;
+        position: absolute;
+        transition: 0.3s;
+        display: block;
+        opacity: 0;
+    }
+}
+
+@media (min-width: 1920px) {
+    #extInfBox {
+        top: 120px;
+        width: 55%;
+        height: 720px;
+        margin-left: 90px;
+        position: absolute;
+        transition: 0.3s;
+        display: block;
+        opacity: 0;
     }
 }
 
@@ -328,7 +365,7 @@ button {
     z-index: 1;
 }
 
-.groupBox{
+.groupBox {
     width: 70%;
     height: 100%;
     padding: 20px;
@@ -338,6 +375,7 @@ button {
     border-radius: 10px;
     position: relative;
 }
+
 .groupBox-title {
     top: -12px;
     position: absolute;
@@ -374,6 +412,7 @@ button {
     filter: grayscale(100%);
     transition: 0.5s;
 }
+
 .exampleTitle {
     top: 10px;
     left: 10px;
@@ -388,7 +427,7 @@ button {
 }
 
 .examples:hover .exampleTitle {
- left: 15px;   
+    left: 15px;
 }
 
 .detailed {
