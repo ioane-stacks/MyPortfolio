@@ -22,9 +22,9 @@ function Hide() {
     showContent.style.display = 'none';
 }
 
-function showInfo(variant){ 
+function showInfo(variant) {
     Show();
-    switch(variant) {
+    switch (variant) {
         case 1:
             showHome();
             break;
@@ -84,7 +84,7 @@ function copyToClipboard(Id) {
     document.body.removeChild(newTextArea);
 }
 
-function textCopy(mLeft, Id){
+function textCopy(mLeft, Id) {
     copyToClipboard(Id);
     var createSpan = document.createElement("span");
     var node = document.createTextNode("დაკოპირებულია");
@@ -99,7 +99,7 @@ function textCopy(mLeft, Id){
     }, 1000);
 }
 
-function disableInfo(){
+function disableInfo() {
     var createSpan = document.createElement("span");
     var node = document.createTextNode("დროებით მიუწვდომელია");
     var tooltipAdd = document.getElementById("tooltip");
@@ -117,7 +117,7 @@ function disableInfo(){
 }
 
 function ShowDetailed(Name) {
-    switch(Name) {
+    switch (Name) {
         case 'learncodding':
             window.open("https://ioane-stacks.github.io/LearnCoding/", "_blank");
             break;
@@ -138,6 +138,9 @@ function ShowDetailed(Name) {
             break;
         case 'calculator':
             window.open("https://ioane-stacks.github.io/Javascript-Calculator/", "_blank");
+            break;
+        case 'mydrawingapp':
+            window.open("https://ioane-stacks.github.io/MyDrawingApp/", "_blank");
             break;
     }
 }
